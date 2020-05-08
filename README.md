@@ -13,6 +13,7 @@ File structure:
 - One cluster per line
 - Paticle Cluster Syntax (space delimited)
 - CLUSTER_CODE  X_POSITION  Y_POSITION RADIUS  N_PARTICLES MASS
+- Positions are relative on a scale of 0.0-1.0
 - please look at the example datafiles
 
 Cluster Codes
