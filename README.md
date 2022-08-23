@@ -12,7 +12,8 @@ Used to configure particles in simulation
 File structure:
 - One cluster per line
 - Paticle Cluster Syntax (space delimited)
-- CLUSTER_CODE  X_POSITION  Y_POSITION RADIUS  N_PARTICLES MASS
+- File Syntax: [CLUSTER_CODE]  [X_POSITION]  [Y_POSITION] [RADIUS]  [N_PARTICLES MASS]
+- Example: RAND 0.5 0.5 1e10 1e10
 - Positions are relative on a scale of 0.0-1.0
 - please look at the example datafiles
 
