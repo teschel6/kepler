@@ -11,15 +11,26 @@ and exploration of planatery motion.
 
 
 ## Building Kepler
-Make sure you are in the project root directory and run the java compiler command to build. 
-```console
-$ javac -d /bin ./java
+
+Requires...
+
+- java 21 or greater
+- maven
+
+```bash
+mvn clean package
 ```
 
-## Usage
-After building files will be located in the _bin_ directory
-```console
-$ java Kepler <time_step> <thread_count> <sim_file>
+## Kepler Usage
+
+```bash
+java -jar target/kepler-1.0.0.jar <time_step> <thread_count> <sim_file>
+
+# simple spiral galaxy simulation
+java -jar target/kepler-1.0.0.jar 0.1 4 simulations/galaxy_spiral.sim
+
+# galaxy collision - two particle clusters
+java -jar target/kepler-1.0.0.jar 0.1 8 simulations/galaxy_collision.sim
 ```
 * **time_step** </br>
 the number of seconds that pass on each update.
