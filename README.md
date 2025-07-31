@@ -1,4 +1,7 @@
 # Kepler
+
+
+
 Kepler is planatary motion simulator that implements the Barnes-Hut 
 N-Body Force calculation algorigthm. 
 [Read More](https://en.wikipedia.org/wiki/Barnes%E2%80%93Hut_simulation)\
@@ -8,6 +11,8 @@ multiple cores for faster simulations.
 It is not a scientific tool, the simulations are meant to run in 
 real time and is intented for visual experimentation
 and exploration of planatery motion.
+
+<img width="536" height="536" alt="image" src="https://github.com/user-attachments/assets/21d6532b-c279-49ce-84e6-95763881843c" />
 
 
 ## Building Kepler
