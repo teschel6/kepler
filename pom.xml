@@ -7,7 +7,7 @@
 
     <groupId>com.yourname</groupId>
     <artifactId>kepler</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>Kepler</name>

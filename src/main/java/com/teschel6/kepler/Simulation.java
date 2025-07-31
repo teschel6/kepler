@@ -9,7 +9,7 @@ import javax.swing.Timer;
 
 public class Simulation extends JFrame {
 
-    public final static int WORLD_WIDTH = 600;
+    public final static int WORLD_WIDTH = 1000;
     static private double deltaTime;
     private ArrayList<Particle> particles;
     private ArrayList<ArrayList<Particle>> partitions;
