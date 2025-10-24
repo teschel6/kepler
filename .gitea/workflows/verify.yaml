@@ -4,19 +4,17 @@ on:
   push:
     branches:
       - '**'
-
 jobs:
   verify:
     runs-on: ubuntu-latest
+    container:
+      image: maven:3.9-eclipse-temurin-17
     
     steps:
       - name: Checkout code
         run: |
           git clone ${{ gitea.server_url }}/${{ gitea.repository }} .
           git checkout ${{ gitea.sha }}
-          ls -lah .
-
-      - name: Set up JDK
-        run: |
-          apt-get update
-          apt-get install -y openjdk-17-jdk maven
+      
+      - name: Run Maven verify
+        run: mvn verify
