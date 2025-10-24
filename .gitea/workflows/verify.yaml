@@ -1,0 +1,14 @@
+name: Maven Verify
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
