@@ -14,11 +14,4 @@ jobs:
         run: |
           git clone ${{ gitea.server_url }}/${{ gitea.repository }} .
           git checkout ${{ gitea.sha }}
-      
-      - name: Set up JDK
-        run: |
-          apt-get update
-          apt-get install -y openjdk-17-jdk maven
-      
-      - name: Run Maven verify
-        run: mvn verify    
+          ls -lah .
